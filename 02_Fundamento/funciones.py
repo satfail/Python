@@ -18,13 +18,15 @@ coches = [{ "marca" : "Ford","modelo" : "Fiesta", "kilometros" : 23333,"gasolina
 
 def calcular_kpg(coche_a_calcular):
     kpg = coche_a_calcular["kilometros"] / coche_a_calcular["gasolina_consumida"]
-    return kpg
     nombre = f"{coche_a_calcular['marca']} {coche_a_calcular['modelo']}"
     print(f"{nombre} hace {kpg} kilometros por litro")
 
-for car in coches:
-    kpg =calcular_kpg(car)
+calcular_kpg(coche)
 
-print(kpg)
+for car in coches:
+    calcular_kpg(car)
+
+
+
 
 
