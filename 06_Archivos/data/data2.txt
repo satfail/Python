@@ -1,0 +1,1 @@
+& D:/Anaconda/python.exe c:/Users/Miguel/OneDrive/GSI/OffTopic/Udemy/Python/06_Archivos/amigos.py

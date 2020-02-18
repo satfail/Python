@@ -1,0 +1,16 @@
+{
+    "amigos": [
+        {
+            "nombre":"Miguel",
+            "grado":"Informatica"
+        },
+        {
+            "nombre":"Maria Jose",
+            "grado":"Psicologia"            
+        },
+        {
+            "nombre":"Carmen",
+            "grado":"Matematicas"
+        }
+    ]
+}

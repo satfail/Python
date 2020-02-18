@@ -1,0 +1,5 @@
+nombre,edad,universidad,grado
+Miguel Angel,33,UCAM,Informatica
+Maria Jose,34,UCAM,Psicologia
+Lucas,22,UCAM,Matematicas
+Carmen,21,UCAM,Fisica
