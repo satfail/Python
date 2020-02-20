@@ -1,0 +1,36 @@
+
+/*OR y AND*/
+
+SELECT customers.first_name, customers.last_name FROM customers
+WHERE customers.first_name = 'Rolf' OR customers.last_name = 'Watson';
+
+
+
+
+
+
+
+ /*Doble INNER*/
+
+ SELECT * from items
+INNER JOIN purchases ON items.id = purchases.item_id
+INNER JOIN customers ON purchases.customer_id = customers.id;
+
+/*Group by adn INNER JOIN*/
+
+SELECT customers.first_name, customers.last_name, SUM(items.price) AS "Suma de precios"
+FROM items
+INNER JOIN purchases ON items.id = purchases.item_id
+INNER JOIN customers ON purchases.customer_id = customers.id
+GROUP BY customers.id;
+
+
+/* Order By */
+
+SELECT customers.first_name,customers.last_name,SUM(items.price) AS "Total_Gastado"
+FROM items
+INNER JOIN purchases ON purchases.item_id = items.id
+INNER JOIN customers ON customers.id = purchases.customer_id
+GROUP BY customers.id
+ORDER BY "Total_Gastado" DESC 
+LIMIT 3;
